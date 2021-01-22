@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".Activity.MainActivity"
+    android:background="@color/colorBackground"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="45dp"
+        android:paddingTop="45dp">
+
+        <Button
+            android:id="@+id/btn_generator"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorBackground"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_generate"/>
+
+        <Button
+            android:id="@+id/btn_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="21dp"
+            android:background="@color/colorBackground"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_scan" />
+    </LinearLayout>
+
+</RelativeLayout>

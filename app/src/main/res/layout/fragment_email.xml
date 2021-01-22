@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/edt_email_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:background="@drawable/round_edttxt"
+        android:maxLines="1"
+        android:minLines="1"
+        android:hint="@string/hint_email"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/email_subject" />
+
+    <EditText
+        android:id="@+id/edt_email_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailSubject"
+        android:textCursorDrawable="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:background="@drawable/round_edttxt"
+        android:maxLines="1"
+        android:minLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/email_messaqe" />
+
+    <EditText
+        android:id="@+id/edt_email_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:nestedScrollingEnabled="true"
+        android:textCursorDrawable="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:background="@drawable/round_edttxt" />
+
+</LinearLayout>

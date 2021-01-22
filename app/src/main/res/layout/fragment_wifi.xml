@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/wireless_ssid" />
+
+    <EditText
+        android:id="@+id/edt_wifi_ssid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@android:color/holo_blue_light"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="10dp"
+        android:background="@drawable/round_edttxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/edt_wifi_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@android:color/holo_blue_light"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="10dp"
+        android:background="@drawable/round_edttxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/wifi_encryption" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edttxt">
+        <Spinner
+            android:id="@+id/sp_encryption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

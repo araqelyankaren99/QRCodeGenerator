@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_enter_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/enter_content"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/iv_enter_content_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_enter_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground" />
+
+        <LinearLayout
+            android:id="@+id/ll_set_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/set_colors"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/iv_set_colors_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_colors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_single_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:checked="true"
+                    android:text="@string/single_color" />
+
+                <RadioButton
+                    android:id="@+id/rb_color_gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:text="@string/color_gradient" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_foreground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_foreground_color"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_foreground_hex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_gradient_color"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_gradient_hex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_logo_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/add_logo_image"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/iv_add_logo_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_upload_logo"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_logo_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp">
+
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/upload_image"
+                    android:textColor="@color/colorBlue" />
+                <Button
+                    android:id="@+id/btn_remove_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/remove_logo"
+                    android:textColor="@color/colorBlue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="10dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:nestedScrollingEnabled="true"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground" />
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/qr_default"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+        <SeekBar
+            android:id="@+id/sb_base_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:max="1800"
+            android:progressTint="@android:color/holo_blue_light"
+            android:thumbTint="@android:color/holo_blue_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/low_quality"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_base_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:text="1000x1000 Px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/high_quality"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="left|center"
+                android:text="@string/create_qr_code"
+                android:textColor="@color/colorBlue" />
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="right|center"
+                android:text="@string/download_png"
+                android:textColor="@color/colorBlue" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

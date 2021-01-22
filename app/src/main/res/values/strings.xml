@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">QR Code Barcode Scanner and Generator</string>
+    <string name="text_generate">QR Generator</string>
+    <string name="text_scan">Scanner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_url">https://www.dvidshub.net/publication/1031/the-journal</string>
+    <string name="error_url">Enter Correct URL</string>
+    <string name="error_text">Enter Text</string>
+    <string name="error_mail">Enter Correct EMail</string>
+    <string name="error_facebook">Enter Correct Facebook URL</string>
+    <string name="error_youtube">Enter Correct Youtube URL</string>
+    <string name="error_phone">Enter Correct Phone</string>
+    <string name="enter_content">ENTER CONTENT</string>
+    <string name="set_colors">SET COLORS</string>
+    <string name="single_color">Single Color</string>
+    <string name="color_gradient">Color Gradient</string>
+    <string name="add_logo_image">ADD LOGO IMAGE</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="low_quality">LOW QUALITY</string>
+    <string name="high_quality">HIGH QUALITY</string>
+    <string name="create_qr_code">CREATE QR CODE</string>
+    <string name="download_png">DOWNLOAD PNG</string>
+    <string name="email">Your Email</string>
+    <string name="hint_email">name@mail.com</string>
+    <string name="email_subject">Subject</string>
+    <string name="email_messaqe">Messaqe</string>
+    <string name="event_title">Event Title</string>
+    <string name="location">Location</string>
+    <string name="event_start_time">Start Time</string>
+    <string name="event_end_time">End Time</string>
+    <string name="facebook_url">FaceBook URL</string>
+    <string name="facebook_share_url">Share URL</string>
+    <string name="facebook_url_title">Your Facebook URL</string>
+    <string name="hint_facebook">https://www.facebook.com</string>
+    <string name="phone_title">Your Phone</string>
+    <string name="hint_phone">+374</string>
+    <string name="sms_message">Your Message</string>
+    <string name="text_title">Your Text</string>
+    <string name="url_title">Your URL</string>
+    <string name="hint_url">https://</string>
+    <string name="wireless_ssid">Wireless SSID</string>
+    <string name="password">Password</string>
+    <string name="wifi_encryption">Encryption</string>
+    <string name="youtube_url_title">Your Youtube URL</string>
+    <string name="hint_youtube">https://www.youtube.com</string>
+    <string name="qr_generator">QR GENERATOR</string>
+    <string name="facebook_share">"/sharer/sharer.php?u=https%3A%2F%2F"</string>
+    <string name="color_black">#000000</string>
+    <string name="toast_qr_created">QR Code Created</string>
+    <string name="toast_create_qr">Create QR</string>
+    <string name="toast_image_saved">Image Saved</string>
+    <string name="dialog_scan_again">Scan Again</string>
+    <string name="dialog_visit">Visit</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_title">QR_CODE</string>
+    <string name="result_send">Send</string>
+    <string name="result_call">Call</string>
+    <string name="result_connect">Connect</string>
+    <string name="result_visit">Visit</string>
+    <string name="dialog_copy">Copy</string>
+    <string name="remove_logo">Remove Logo</string>
+    <string name="result_share">Share</string>
+</resources>
